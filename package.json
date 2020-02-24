@@ -1,0 +1,11 @@
+{
+  "name": "cacheit",
+  "version": "0.0.1",
+  "scripts": {
+    "doc": "typedoc"
+  },
+  "devDependencies": {
+    "typedoc": "^0.16.10",
+    "typescript": "^3.8.2"
+  }
+}
