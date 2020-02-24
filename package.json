@@ -2,10 +2,12 @@
   "name": "cacheit",
   "version": "0.0.1",
   "scripts": {
+    "tsc": "tsc",
     "doc": "typedoc"
   },
   "devDependencies": {
     "typedoc": "^0.16.10",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.2",
+    "webpack-dev-server": "^3.10.3"
   }
 }

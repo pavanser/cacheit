@@ -1,11 +1,8 @@
-import { AbstractCache, AbstractIndexedDB, AbstractLocalStorage, AbstractSessionStorage } from 'classes';
+import AbstractCache from './AbstractCache';
+import IStorage = CacheIT.IStorage;
 
 class CacheIt extends AbstractCache {
-  storage:
-    AbstractLocalStorage |
-    AbstractSessionStorage |
-    AbstractIndexedDB
-    = AbstractCache.defineStorageType();
+  storage: IStorage = AbstractCache.defineStorageType();
 }
 
 export default CacheIt;

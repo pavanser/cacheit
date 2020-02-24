@@ -1,8 +1,12 @@
-import AbstractLocalStorageStore from 'classes/stores/AbstractLocalStorageStore';
-import { IResult, IStoreItem } from 'interfaces';
-import { Actions, Statuses } from 'enums';
+import IStore = CacheIT.IStore;
+import IStoreItem = CacheIT.IStoreItem;
+import Actions = Enums.Actions;
+import Statuses = Enums.Statuses;
+import IResult = CacheIT.IResult;
 
-class LocalStorageStore extends AbstractLocalStorageStore {
+class LocalStorageStore implements IStore {
+  store: Storage = window.localStorage;
+
   add(item: IStoreItem): Promise<IResult> {
     return Promise.resolve({
       status: Statuses.success,

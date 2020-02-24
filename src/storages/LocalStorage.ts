@@ -1,8 +1,9 @@
-import { AbstractLocalStorage, AbstractLocalStorageStore } from 'classes';
 import LocalStorageStore from 'stores/LocalStorageStore';
+import IStorage = CacheIT.IStorage;
+import IStore = CacheIT.IStore;
 
-class LocalStorage extends AbstractLocalStorage {
-  createStore(): AbstractLocalStorageStore {
+class LocalStorage implements IStorage {
+  createStore(): IStore {
     return new LocalStorageStore();
   }
 

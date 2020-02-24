@@ -1,8 +1,12 @@
-import { AbstractSessionStorageStore, IStore } from 'classes';
-import { IResult, IStoreItem } from 'interfaces';
-import { Actions, Statuses } from 'enums';
+import IStore = CacheIT.IStore;
+import IStoreItem = CacheIT.IStoreItem;
+import IResult = CacheIT.IResult;
+import Actions = Enums.Actions;
+import Statuses = Enums.Statuses;
 
-class SessionStorageStore extends AbstractSessionStorageStore {
+class SessionStorageStore implements IStore {
+  store: Storage = window.sessionStorage;
+
   add(item: IStoreItem): Promise<IResult> {
     return Promise.resolve({
       status: Statuses.success,

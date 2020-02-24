@@ -1,8 +1,10 @@
-import { AbstractSessionStorage, AbstractSessionStorageStore } from 'classes';
-import SessionStorageStore from 'stores/SessionStorageStore';
+import IStorage = CacheIT.IStorage;
+import IStore = CacheIT.IStore;
 
-class SessionStorage extends AbstractSessionStorage {
-  createStore(): AbstractSessionStorageStore {
+import { SessionStorageStore } from 'stores';
+
+class SessionStorage implements IStorage {
+  createStore(): IStore {
     return new SessionStorageStore();
   }
 

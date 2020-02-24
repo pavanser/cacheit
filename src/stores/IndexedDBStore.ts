@@ -1,8 +1,12 @@
-import { AbstractIndexedDBStore } from 'classes';
-import { IResult, IStoreItem } from 'interfaces';
-import { Actions, Statuses } from 'enums';
+import IStoreItem = CacheIT.IStoreItem;
+import IStore = CacheIT.IStore;
+import IResult = CacheIT.IResult;
+import Actions = Enums.Actions;
+import Statuses = Enums.Statuses;
 
-class IndexedDBStore extends AbstractIndexedDBStore {
+class IndexedDBStore implements IStore {
+  store: IDBFactory = window.indexedDB;
+
   add(item: IStoreItem): Promise<IResult> {
     return Promise.resolve({
       status: Statuses.success,

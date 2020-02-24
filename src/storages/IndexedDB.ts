@@ -1,13 +1,14 @@
-import { AbstractIndexedDB, AbstractIndexedDBStore } from 'classes';
-import { IndexedDBStore } from 'stores';
+import IStorage = CacheIT.IStorage;
+import IndexedDBStore from 'stores/IndexedDBStore';
 
-class IndexedDB extends AbstractIndexedDB {
-  createStore(): AbstractIndexedDBStore {
+class IndexedDB implements IStorage {
+  createStore(): CacheIT.IStore {
     return new IndexedDBStore();
   }
 
   removeStore(): void {
   }
+
 }
 
 export default IndexedDB;
