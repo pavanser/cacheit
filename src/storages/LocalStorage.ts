@@ -1,13 +1,17 @@
-import LocalStorageStore from 'stores/LocalStorageStore';
-import IStorage = CacheIT.IStorage;
-import IStore = CacheIT.IStore;
+import { LocalStorageCollection } from "collections";
 
-class LocalStorage implements IStorage {
-  createStore(): IStore {
-    return new LocalStorageStore();
+class LocalStorage implements CacheIT.IStorage {
+  private collections: CacheIT.IStorageItems = {};
+
+  get storage(): CacheIT.IStorageItems {
+    return Object.assign({}, this.collections);
   }
 
-  removeStore(): void {}
+  addCollection(collectionName: string): void {
+    this.collections[collectionName] = new LocalStorageCollection(collectionName);
+  }
+
+  deleteCollection(): void {}
 }
 
 export default LocalStorage;

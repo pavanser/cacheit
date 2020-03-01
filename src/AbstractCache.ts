@@ -1,12 +1,11 @@
-import LocalStorage from 'storages/LocalStorage';
-import IndexedDB from 'storages/IndexedDB';
-import SessionStorage from 'storages/SessionStorage';
-import IStorage = CacheIT.IStorage;
+import LocalStorage from "storages/LocalStorage";
+import IndexedDB from "storages/IndexedDB";
+import SessionStorage from "storages/SessionStorage";
 
 abstract class AbstractCache {
-  abstract storage: IStorage;
+  abstract storage: CacheIT.IStorage;
 
-  static defineStorageType(): IStorage {
+  static defineStorageType(): CacheIT.IStorage {
 
     if (window.indexedDB) {
       return new IndexedDB();

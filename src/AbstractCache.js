@@ -1,23 +1,15 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var LocalStorage_1 = __importDefault(require("storages/LocalStorage"));
-var IndexedDB_1 = __importDefault(require("storages/IndexedDB"));
-var SessionStorage_1 = __importDefault(require("storages/SessionStorage"));
-var AbstractCache = /** @class */ (function () {
-    function AbstractCache() {
-    }
-    AbstractCache.defineStorageType = function () {
+import LocalStorage from "storages/LocalStorage";
+import IndexedDB from "storages/IndexedDB";
+import SessionStorage from "storages/SessionStorage";
+class AbstractCache {
+    static defineStorageType() {
         if (window.indexedDB) {
-            return new IndexedDB_1.default();
+            return new IndexedDB();
         }
         if (window.sessionStorage) {
-            return new SessionStorage_1.default();
+            return new SessionStorage();
         }
-        return new LocalStorage_1.default();
-    };
-    return AbstractCache;
-}());
-exports.default = AbstractCache;
+        return new LocalStorage();
+    }
+}
+export default AbstractCache;

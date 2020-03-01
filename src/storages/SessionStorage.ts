@@ -1,16 +1,17 @@
-import IStorage = CacheIT.IStorage;
-import IStore = CacheIT.IStore;
+import { SessionStorageCollection } from "collections";
 
-import { SessionStorageStore } from 'stores';
+class SessionStorage implements CacheIT.IStorage {
+  private collections: CacheIT.IStorageItems = {};
 
-class SessionStorage implements IStorage {
-  createStore(): IStore {
-    return new SessionStorageStore();
+  get storage(): CacheIT.IStorageItems {
+    return Object.assign({}, this.collections);
   }
 
-  removeStore(): void {
+  addCollection(collectionName: string): void {
+    this.collections[collectionName] = new SessionStorageCollection(collectionName);
   }
 
+  deleteCollection(): void {}
 }
 
 export default SessionStorage;

@@ -6,6 +6,7 @@
     "doc": "typedoc"
   },
   "devDependencies": {
+    "tslint": "^6.0.0",
     "typedoc": "^0.16.10",
     "typescript": "^3.8.2",
     "webpack-dev-server": "^3.10.3"

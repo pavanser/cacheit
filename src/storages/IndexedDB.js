@@ -1,17 +1,14 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var IndexedDBStore_1 = __importDefault(require("stores/IndexedDBStore"));
-var IndexedDB = /** @class */ (function () {
-    function IndexedDB() {
+import { IndexedDBCollection } from "collections";
+class IndexedDB {
+    constructor() {
+        this.collections = {};
     }
-    IndexedDB.prototype.createStore = function () {
-        return new IndexedDBStore_1.default();
-    };
-    IndexedDB.prototype.removeStore = function () {
-    };
-    return IndexedDB;
-}());
-exports.default = IndexedDB;
+    get storage() {
+        return Object.assign({}, this.collections);
+    }
+    addCollection(collectionName) {
+        this.storage[collectionName] = new IndexedDBCollection(collectionName);
+    }
+    deleteCollection() { }
+}
+export default IndexedDB;

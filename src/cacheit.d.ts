@@ -2,26 +2,31 @@ declare namespace CacheIT {
   import Statuses = Enums.Statuses;
   import Actions = Enums.Actions;
 
+  export interface IStorageItems {
+    [key: string]: ICollection;
+  }
+
   export interface IStorage {
+    readonly storage: IStorageItems;
     /**
      * Method used for creating different storage types in depends from browser and its mode;
      * It will return one of AbstractLocalStorageStore | AbstractSessionStorageStore | AbstractIndexedDBStore instance;
      * */
-    createStore(): IStore;
+    addCollection(storeName: string): void;
 
     /**
      * Method used for removing current store instance
      * */
-    removeStore(): void;
+    deleteCollection(): void;
   }
 
   export interface IResult {
-    status: Statuses
-    action: Actions
-    items: IStoreItem[]
+    status: Statuses;
+    action: Actions;
+    items: ICollectionItem[];
   }
 
-  export interface IStoreItem {
+  export interface ICollectionItem {
     id: string;
     [key: string]: any;
   }
@@ -29,24 +34,23 @@ declare namespace CacheIT {
   /**
    * Description of methods, what each store instance will return.
    */
-  export interface IStore {
+  export interface ICollection {
     /**
-     * Store instance for using its own methods if required, and using it inside store object.
+     * Name of current collection
      * */
-    store: Storage | IDBFactory;
-
+    readonly name: string;
     /**
-     * Add single IStoreItem in current store instance.
+     * Add single ICollectionItem in current store instance.
      * Item id is required for proper adding and future usage.
      * */
-    add(item: IStoreItem): Promise<IResult>
+    add(item: ICollectionItem): Promise<IResult>;
 
     /**
      * Bulk adding items in current store instance.
-     * Method expected IStoreItem[] here.
+     * Method expected ICollectionItem[] here.
      * Item id is required in each array item for proper adding and future usage.
      * */
-    addBulk(items: IStoreItem[]): Promise<IResult>;
+    addBulk(items: ICollectionItem[]): Promise<IResult>;
 
     /**
      * Delete all items from current store instance
@@ -56,12 +60,12 @@ declare namespace CacheIT {
     /**
      * Getting single item by key
      * */
-    get(key: string): Promise<IStoreItem>;
+    get(key: string): Promise<ICollectionItem>;
 
     /**
      * Getting all items from current store instance
      * */
-    getAll(): Promise<IStoreItem[]>;
+    getAll(): Promise<ICollectionItem[]>;
 
     /**
      * Delete items by {@params key} from current store instance
@@ -79,33 +83,33 @@ declare namespace CacheIT {
     keys(): Promise<string[]>;
 
     /**
-     * Update single IStoreItem in current store instance.
+     * Update single ICollectionItem in current store instance.
      * Could be full item or it's part.
      * Item id is required for proper updating.
      * */
-    put(item: IStoreItem): Promise<IResult>;
+    put(item: ICollectionItem): Promise<IResult>;
 
     /**
      * Bulk updating items in current store instance.
-     * Method expected an IStoreItem[]here.
+     * Method expected an ICollectionItem[]here.
      * Could be full item or it's part.
      * Item id is required for proper updating.
      * */
-    putBulk(items: IStoreItem[]): Promise<IResult>;
+    putBulk(items: ICollectionItem[]): Promise<IResult>;
 
     /**
-     * Update or add IStoreItem in current store instance.
+     * Update or add ICollectionItem in current store instance.
      * Could be full item or it's part.
      * Item id is required for proper updating or adding.
      * */
-    upsert(item: IStoreItem): Promise<IResult>;
+    upsert(item: ICollectionItem): Promise<IResult>;
 
     /**
      * Bulk updating or adding items in current store instance.
-     * Method expected an IStoreItem[] here.
+     * Method expected an ICollectionItem[] here.
      * Could be full item or it's part.
      * Item id is required for proper updating.
      * */
-    upsertBulk(items: IStoreItem[]): Promise<IResult>;
+    upsertBulk(items: ICollectionItem[]): Promise<IResult>;
   }
 }

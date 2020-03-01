@@ -1,14 +1,17 @@
-import IStorage = CacheIT.IStorage;
-import IndexedDBStore from 'stores/IndexedDBStore';
+import { IndexedDBCollection } from "collections";
 
-class IndexedDB implements IStorage {
-  createStore(): CacheIT.IStore {
-    return new IndexedDBStore();
+class IndexedDB implements CacheIT.IStorage {
+  private collections: CacheIT.IStorageItems = {};
+
+  get storage(): CacheIT.IStorageItems {
+    return Object.assign({}, this.collections);
   }
 
-  removeStore(): void {
+  addCollection(collectionName: string): void {
+    this.storage[collectionName] = new IndexedDBCollection(collectionName);
   }
 
+  deleteCollection(): void {}
 }
 
 export default IndexedDB;
