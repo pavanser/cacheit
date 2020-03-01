@@ -1,5 +1,5 @@
 import { InMemoryCollection } from "collections";
-class InMemoryStorage {
+class InMemory {
     constructor() {
         this.collections = {};
     }

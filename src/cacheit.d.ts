@@ -2,6 +2,10 @@ declare namespace CacheIT {
   import Statuses = Enums.Statuses;
   import Actions = Enums.Actions;
 
+  export interface AbstractCache {
+    storage: IStorage;
+  }
+
   export interface IStorageItems {
     [key: string]: ICollection;
   }

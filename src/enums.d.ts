@@ -1,14 +1,14 @@
 declare namespace Enums {
   export enum Actions {
-    add = 'added',
-    clear = 'cleared',
-    delete = 'deleted',
-    update = 'updated',
-    upsert = 'upserted',
+    Add = "Added",
+    Clear = "Cleared",
+    Delete = "Deleted",
+    Update = "Updated",
+    Upsert = "Upserted",
   }
 
   export enum Statuses {
-    success = 'success',
-    failed = 'failed',
+    Success = "Success",
+    Failed = "Failed",
   }
 }

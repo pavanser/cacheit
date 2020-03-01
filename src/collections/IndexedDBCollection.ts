@@ -7,40 +7,40 @@ class IndexedDBCollection implements CacheIT.ICollection {
 
   add(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.add,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Add,
       items: [],
     });
   }
 
   addBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.add,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Add,
       items: [],
     });
   }
 
   clear(key: string): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.clear,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Clear,
       items: [],
     });
   }
 
   delete(key: string): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.delete,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Delete,
       items: [],
     });
   }
 
   deleteBulk(...keys: string[]): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.delete,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Delete,
       items: [],
     });
   }
@@ -59,32 +59,32 @@ class IndexedDBCollection implements CacheIT.ICollection {
 
   put(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.update,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Update,
       items: [],
     });
   }
 
   putBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.update,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Update,
       items: [],
     });
   }
 
   upsert(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.upsert,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Upsert,
       items: [],
     });
   }
 
   upsertBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.upsert,
+      status: Enums.Statuses.Success,
+      action: Enums.Actions.Upsert,
       items: [],
     });
   }

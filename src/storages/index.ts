@@ -1,11 +1,11 @@
-import IndexedDB from "./IndexedDB";
+import IndexedDB from "storages/IndexedDB";
 import LocalStorage from "./LocalStorage";
 import SessionStorage from "./SessionStorage";
-import InMemoryStorage from "./InMemoryStorage";
+import InMemory from "storages/InMemory";
 
 export {
   IndexedDB,
-  InMemoryStorage,
+  InMemory,
   LocalStorage,
   SessionStorage,
 };

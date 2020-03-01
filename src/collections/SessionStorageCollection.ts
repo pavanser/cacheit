@@ -11,87 +11,51 @@ class SessionStorageCollection implements CacheIT.ICollection {
   }
 
   add(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.add,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 
   addBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.add,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 
   clear(key: string): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.clear,
-      items: [],
-    });
-  }
-
-  delete(key: string): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.delete,
-      items: [],
-    });
-  }
-
-  deleteBulk(...keys: string[]): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.delete,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 
   get(key: string): Promise<CacheIT.ICollectionItem> {
-    return Promise.resolve({ id: "test-id" });
+    throw new Error("Method not implemented.");
   }
 
   getAll(): Promise<CacheIT.ICollectionItem[]> {
-    return Promise.resolve([{ id: "test-id" }]);
+    throw new Error("Method not implemented.");
+  }
+
+  delete(key: string): Promise<CacheIT.IResult> {
+    throw new Error("Method not implemented.");
+  }
+
+  deleteBulk(...keys: string[]): Promise<CacheIT.IResult> {
+    throw new Error("Method not implemented.");
   }
 
   keys(): Promise<string[]> {
-    return Promise.resolve([]);
+    throw new Error("Method not implemented.");
   }
 
   put(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.update,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 
   putBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.update,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 
   upsert(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.upsert,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 
   upsertBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
-    return Promise.resolve({
-      status: Enums.Statuses.success,
-      action: Enums.Actions.upsert,
-      items: [],
-    });
+    throw new Error("Method not implemented.");
   }
 }
 

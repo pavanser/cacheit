@@ -1,6 +1,6 @@
 import { InMemoryCollection } from "collections";
 
-class InMemoryStorage implements CacheIT.IStorage {
+class InMemory implements CacheIT.IStorage {
   private collections: CacheIT.IStorageItems = {};
 
   get storage(): CacheIT.IStorageItems {
@@ -16,4 +16,4 @@ class InMemoryStorage implements CacheIT.IStorage {
 
 }
 
-export default InMemoryStorage;
+export default InMemory;
