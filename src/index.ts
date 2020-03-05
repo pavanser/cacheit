@@ -1,6 +1,9 @@
-import IndexedDB from "storages/IndexedDB";
-import SessionStorage from "storages/SessionStorage";
-import LocalStorage from "storages/LocalStorage";
+import IndexedDB from "./storages/IndexedDB";
+import SessionStorage from "./storages/SessionStorage";
+import LocalStorage from "./storages/LocalStorage";
+import * as CacheIT from "interfaces";
+
+import "interfaces";
 
 class CacheIt implements CacheIT.AbstractCache {
   static defineStorageType(): CacheIT.IStorage {

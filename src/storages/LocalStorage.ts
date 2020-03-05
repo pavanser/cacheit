@@ -1,4 +1,5 @@
-import { LocalStorageCollection } from "collections";
+import LocalStorageCollection from "../collections/LocalStorageCollection";
+import * as CacheIT from "interfaces";
 
 class LocalStorage implements CacheIT.IStorage {
   private collections: CacheIT.IStorageItems = {};

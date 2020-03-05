@@ -1,14 +1,18 @@
 {
   "name": "cacheit",
   "version": "0.0.1",
+  "main": "./dist/index.js",
   "scripts": {
     "tsc": "tsc",
-    "doc": "typedoc"
+    "serve": "tsc --watch",
+    "open": "google-chrome ./docs/index.html",
+    "start": "typedoc && npm run open",
+    "generate": "typedoc"
   },
   "devDependencies": {
     "tslint": "^6.0.0",
     "typedoc": "^0.16.10",
-    "typescript": "^3.8.2",
-    "webpack-dev-server": "^3.10.3"
-  }
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {}
 }

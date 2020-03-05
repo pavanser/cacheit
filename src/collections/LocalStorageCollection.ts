@@ -1,3 +1,5 @@
+import * as CacheIT from "interfaces";
+
 class LocalStorageCollection implements CacheIT.ICollection {
   readonly name: string;
 

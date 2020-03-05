@@ -1,3 +1,6 @@
+import * as CacheIT from "interfaces";
+import * as Enums from "enums";
+
 class IndexedDBCollection implements CacheIT.ICollection {
   readonly name: string;
 

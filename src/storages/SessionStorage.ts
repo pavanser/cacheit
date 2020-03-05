@@ -1,4 +1,6 @@
-import { SessionStorageCollection } from "collections";
+import SessionStorageCollection from "collections/SessionStorageCollection";
+import * as CacheIT from "interfaces";
+
 
 class SessionStorage implements CacheIT.IStorage {
   private collections: CacheIT.IStorageItems = {};

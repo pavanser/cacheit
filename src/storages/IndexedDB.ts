@@ -1,4 +1,5 @@
-import { IndexedDBCollection } from "collections";
+import IndexedDBCollection from "../collections/IndexedDBCollection";
+import * as CacheIT from "interfaces";
 
 class IndexedDB implements CacheIT.IStorage {
   private collections: CacheIT.IStorageItems = {};

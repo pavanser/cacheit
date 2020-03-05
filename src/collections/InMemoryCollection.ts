@@ -1,3 +1,5 @@
+import * as CacheIT from "interfaces";
+
 class InMemoryCollection implements CacheIT.ICollection {
     readonly name: string;
 

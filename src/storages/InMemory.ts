@@ -1,4 +1,6 @@
-import { InMemoryCollection } from "collections";
+import InMemoryCollection from "../collections/InMemoryCollection";
+import * as CacheIT from "interfaces";
+
 
 class InMemory implements CacheIT.IStorage {
   private collections: CacheIT.IStorageItems = {};

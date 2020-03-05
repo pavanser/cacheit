@@ -1,3 +1,5 @@
+import * as CacheIT from "interfaces";
+
 class SessionStorageCollection implements CacheIT.ICollection {
   readonly name: string;
 
