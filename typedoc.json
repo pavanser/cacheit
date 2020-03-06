@@ -8,5 +8,9 @@
   "includeDeclarations": true,
   "excludeExternals": true,
   "excludePrivate": true,
-  "hideGenerator": true
+  "hideGenerator": true,
+  "plugin": [
+    "typedoc-plugin-ui-router",
+    "typedoc-plugin-markdown"
+  ]
 }
