@@ -7,12 +7,12 @@
     "serve": "tsc --watch",
     "open": "google-chrome ./docs/index.html",
     "start": "typedoc && npm run open",
-    "generate": "typedoc ./dist"
+    "generate": "typedoc ./dist",
+    "build": "tsc && npm run generate"
   },
   "devDependencies": {
     "tslint": "^6.0.0",
     "typedoc": "^0.16.10",
     "typescript": "^3.8.2"
-  },
-  "dependencies": {}
+  }
 }
