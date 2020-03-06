@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IStorage | CacheIT</title>
+	<title>InMemory | CacheIT</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="istorage.html">IStorage</a>
+					<a href="inmemory.html">InMemory</a>
 				</li>
 			</ul>
-			<h1>Interface IStorage</h1>
+			<h1>Class InMemory</h1>
 		</div>
 	</div>
 </header>
@@ -68,17 +68,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IStorage</span>
+						<span class="target">InMemory</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implemented by</h3>
+				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/inmemory.html" class="tsd-signature-type">InMemory</a></li>
-					<li><a href="../classes/indexeddb.html" class="tsd-signature-type">IndexedDB</a></li>
-					<li><a href="../classes/localstorage.html" class="tsd-signature-type">LocalStorage</a></li>
-					<li><a href="../classes/sessionstorage.html" class="tsd-signature-type">SessionStorage</a></li>
+					<li><a href="../interfaces/istorage.html" class="tsd-signature-type">IStorage</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -86,55 +83,57 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istorage.html#storage" class="tsd-kind-icon">storage</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="inmemory.html#storage" class="tsd-kind-icon">storage</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istorage.html#addcollection" class="tsd-kind-icon">add<wbr>Collection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istorage.html#deletecollection" class="tsd-kind-icon">delete<wbr>Collection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemory.html#addcollection" class="tsd-kind-icon">add<wbr>Collection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemory.html#deletecollection" class="tsd-kind-icon">delete<wbr>Collection</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="storage" class="tsd-anchor"></a>
 					<h3>storage</h3>
-					<div class="tsd-signature tsd-kind-icon">storage<span class="tsd-signature-symbol">:</span> <a href="istorageitems.html" class="tsd-signature-type">IStorageItems</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/5ebe2d4/src/interfaces.ts#L12">interfaces.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="addcollection" class="tsd-anchor"></a>
-					<h3>add<wbr>Collection</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Collection<span class="tsd-signature-symbol">(</span>storeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> storage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/istorageitems.html" class="tsd-signature-type">IStorageItems</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/5ebe2d4/src/interfaces.ts#L17">interfaces.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/5ebe2d4/src/storages/InMemory.ts#L8">storages/InMemory.ts:8</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Method used for creating different storage types in depends from browser and its mode;
-									It will return one of [[AbstractLocalStorageStore]] | [[AbstractSessionStorageStore]] | [[AbstractIndexedDBStore]] instance;</p>
-								</div>
-							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/istorageitems.html" class="tsd-signature-type">IStorageItems</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addcollection" class="tsd-anchor"></a>
+					<h3>add<wbr>Collection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Collection<span class="tsd-signature-symbol">(</span>storeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/istorage.html">IStorage</a>.<a href="../interfaces/istorage.html#addcollection">addCollection</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/5ebe2d4/src/storages/InMemory.ts#L12">storages/InMemory.ts:12</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -145,24 +144,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="deletecollection" class="tsd-anchor"></a>
 					<h3>delete<wbr>Collection</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">delete<wbr>Collection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/istorage.html">IStorage</a>.<a href="../interfaces/istorage.html#deletecollection">deleteCollection</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/5ebe2d4/src/interfaces.ts#L22">interfaces.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/5ebe2d4/src/storages/InMemory.ts#L15">storages/InMemory.ts:15</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Method used for removing current store instance</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -186,64 +181,64 @@
 						<a href="../enums/statuses.html" class="tsd-kind-icon">Statuses</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/cacheit.html" class="tsd-kind-icon">Cache<wbr>It</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/inmemory.html" class="tsd-kind-icon">In<wbr>Memory</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/inmemorycollection.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/indexeddb.html" class="tsd-kind-icon">IndexedDB</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/indexeddbcollection.html" class="tsd-kind-icon">IndexedDBCollection</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/localstorage.html" class="tsd-kind-icon">Local<wbr>Storage</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/localstoragecollection.html" class="tsd-kind-icon">Local<wbr>Storage<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/sessionstorage.html" class="tsd-kind-icon">Session<wbr>Storage</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/sessionstoragecollection.html" class="tsd-kind-icon">Session<wbr>Storage<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="abstractcache.html" class="tsd-kind-icon">Abstract<wbr>Cache</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="icollection.html" class="tsd-kind-icon">ICollection</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="icollectionitem.html" class="tsd-kind-icon">ICollection<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iresult.html" class="tsd-kind-icon">IResult</a>
+						<a href="cacheit.html" class="tsd-kind-icon">Cache<wbr>It</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="istorage.html" class="tsd-kind-icon">IStorage</a>
+					<li class="current tsd-kind-class">
+						<a href="inmemory.html" class="tsd-kind-icon">In<wbr>Memory</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="istorage.html#storage" class="tsd-kind-icon">storage</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="inmemory.html#storage" class="tsd-kind-icon">storage</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="istorage.html#addcollection" class="tsd-kind-icon">add<wbr>Collection</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="inmemory.html#addcollection" class="tsd-kind-icon">add<wbr>Collection</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="istorage.html#deletecollection" class="tsd-kind-icon">delete<wbr>Collection</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="inmemory.html#deletecollection" class="tsd-kind-icon">delete<wbr>Collection</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="inmemorycollection.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="indexeddb.html" class="tsd-kind-icon">IndexedDB</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="indexeddbcollection.html" class="tsd-kind-icon">IndexedDBCollection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="localstorage.html" class="tsd-kind-icon">Local<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="localstoragecollection.html" class="tsd-kind-icon">Local<wbr>Storage<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sessionstorage.html" class="tsd-kind-icon">Session<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sessionstoragecollection.html" class="tsd-kind-icon">Session<wbr>Storage<wbr>Collection</a>
+					</li>
 					<li class=" tsd-kind-interface">
-						<a href="istorageitems.html" class="tsd-kind-icon">IStorage<wbr>Items</a>
+						<a href="../interfaces/abstractcache.html" class="tsd-kind-icon">Abstract<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icollection.html" class="tsd-kind-icon">ICollection</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icollectionitem.html" class="tsd-kind-icon">ICollection<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iresult.html" class="tsd-kind-icon">IResult</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/istorage.html" class="tsd-kind-icon">IStorage</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/istorageitems.html" class="tsd-kind-icon">IStorage<wbr>Items</a>
 					</li>
 				</ul>
 			</nav>
