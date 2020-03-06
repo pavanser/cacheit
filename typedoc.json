@@ -2,5 +2,11 @@
   "name": "CacheIT",
   "mode": "file",
   "out": "docs",
-  "theme": "default"
+  "inputFiles": ["./dist"],
+  "externalPattern": ["node_modules/**/*.ts"],
+  "theme": "default",
+  "includeDeclarations": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "hideGenerator": true
 }
