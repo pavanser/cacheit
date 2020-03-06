@@ -1,4 +1,4 @@
-[CacheIT](../globals.md) › [IStorageItems](istorageitems.md)
+[CacheIT](../README.md) › [IStorageItems](istorageitems.md)
 
 # Interface: IStorageItems
 

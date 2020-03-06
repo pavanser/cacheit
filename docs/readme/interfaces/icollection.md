@@ -1,4 +1,4 @@
-[CacheIT](../globals.md) › [ICollection](icollection.md)
+[CacheIT](../README.md) › [ICollection](icollection.md)
 
 # Interface: ICollection
 
@@ -7,13 +7,6 @@ Description of methods, what each collection instance will return.
 ## Hierarchy
 
 * **ICollection**
-
-## Implemented by
-
-* [InMemoryCollection](../classes/inmemorycollection.md)
-* [IndexedDBCollection](../classes/indexeddbcollection.md)
-* [LocalStorageCollection](../classes/localstoragecollection.md)
-* [SessionStorageCollection](../classes/sessionstoragecollection.md)
 
 ## Index
 
@@ -42,7 +35,7 @@ Description of methods, what each collection instance will return.
 
 • **name**: *string*
 
-*Defined in [interfaces.ts:58](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L58)*
+*Defined in [interfaces.ts:58](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L58)*
 
 Name of current collection
 
@@ -52,7 +45,7 @@ Name of current collection
 
 ▸ **add**(`item`: [ICollectionItem](icollectionitem.md)): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:63](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L63)*
+*Defined in [interfaces.ts:63](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L63)*
 
 Add single collection item in current collection instance.
 Item's id is required for proper adding and future usage.
@@ -71,7 +64,7 @@ ___
 
 ▸ **addBulk**(`items`: [ICollectionItem](icollectionitem.md)[]): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:70](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L70)*
+*Defined in [interfaces.ts:70](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L70)*
 
 Bulk adding items in current collection instance.
 Method expected array of [collection items here.
@@ -91,7 +84,7 @@ ___
 
 ▸ **clear**(`key`: string): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:75](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L75)*
+*Defined in [interfaces.ts:75](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L75)*
 
 Delete all items from current collection instance
 
@@ -109,7 +102,7 @@ ___
 
 ▸ **delete**(`key`: string): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:90](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L90)*
+*Defined in [interfaces.ts:90](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L90)*
 
 Delete items by {@params key} from current collection instance
 
@@ -127,7 +120,7 @@ ___
 
 ▸ **deleteBulk**(...`keys`: string[]): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:95](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L95)*
+*Defined in [interfaces.ts:95](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L95)*
 
 Delete more than on item by {@params keys} from current collection instance
 
@@ -145,7 +138,7 @@ ___
 
 ▸ **get**(`key`: string): *Promise‹[ICollectionItem](icollectionitem.md)›*
 
-*Defined in [interfaces.ts:80](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L80)*
+*Defined in [interfaces.ts:80](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L80)*
 
 Getting single item by key
 
@@ -163,7 +156,7 @@ ___
 
 ▸ **getAll**(): *Promise‹[ICollectionItem](icollectionitem.md)[]›*
 
-*Defined in [interfaces.ts:85](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L85)*
+*Defined in [interfaces.ts:85](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L85)*
 
 Getting all items from current collection instance
 
@@ -175,7 +168,7 @@ ___
 
 ▸ **keys**(): *Promise‹string[]›*
 
-*Defined in [interfaces.ts:100](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L100)*
+*Defined in [interfaces.ts:100](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L100)*
 
 Get all current collection instance keys
 
@@ -187,7 +180,7 @@ ___
 
 ▸ **put**(`item`: [ICollectionItem](icollectionitem.md)): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:107](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L107)*
+*Defined in [interfaces.ts:107](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L107)*
 
 Update single collection item in current collection instance.
 Could be full item or it's part.
@@ -207,7 +200,7 @@ ___
 
 ▸ **putBulk**(`items`: [ICollectionItem](icollectionitem.md)[]): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:115](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L115)*
+*Defined in [interfaces.ts:115](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L115)*
 
 Bulk updating items in current collection instance.
 Method expected an array of collection items here.
@@ -228,7 +221,7 @@ ___
 
 ▸ **upsert**(`item`: [ICollectionItem](icollectionitem.md)): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:122](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L122)*
+*Defined in [interfaces.ts:122](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L122)*
 
 Update or add collection item in current collection instance.
 Could be full item or it's part.
@@ -248,7 +241,7 @@ ___
 
 ▸ **upsertBulk**(`items`: [ICollectionItem](icollectionitem.md)[]): *Promise‹[IResult](iresult.md)›*
 
-*Defined in [interfaces.ts:130](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L130)*
+*Defined in [interfaces.ts:130](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L130)*
 
 Bulk updating or adding items in current collection instance.
 Method expected an array of collection items here.

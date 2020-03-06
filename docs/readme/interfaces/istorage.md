@@ -1,17 +1,10 @@
-[CacheIT](../globals.md) › [IStorage](istorage.md)
+[CacheIT](../README.md) › [IStorage](istorage.md)
 
 # Interface: IStorage
 
 ## Hierarchy
 
 * **IStorage**
-
-## Implemented by
-
-* [InMemory](../classes/inmemory.md)
-* [IndexedDB](../classes/indexeddb.md)
-* [LocalStorage](../classes/localstorage.md)
-* [SessionStorage](../classes/sessionstorage.md)
 
 ## Index
 
@@ -30,7 +23,7 @@
 
 • **storage**: *[IStorageItems](istorageitems.md)*
 
-*Defined in [interfaces.ts:18](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L18)*
+*Defined in [interfaces.ts:18](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L18)*
 
 Getter which will return current storage collections as a snapshot.
 
@@ -40,7 +33,7 @@ Getter which will return current storage collections as a snapshot.
 
 ▸ **addCollection**(`collectionName`: string): *void*
 
-*Defined in [interfaces.ts:22](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L22)*
+*Defined in [interfaces.ts:22](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L22)*
 
 Adding new collection [ICollection](icollection.md) to current storage by {@params collectionName}
 
@@ -58,7 +51,7 @@ ___
 
 ▸ **deleteCollection**(`collectionName`: string): *void*
 
-*Defined in [interfaces.ts:27](https://github.com/pavanser/cacheit/blob/da2929e/src/interfaces.ts#L27)*
+*Defined in [interfaces.ts:27](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L27)*
 
 Method used for removing collection [ICollection](icollection.md) from storage by {@params collectionName}
 

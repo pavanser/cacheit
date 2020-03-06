@@ -1,4 +1,0 @@
-[CacheIT](globals.md)
-
-# CacheIT
-

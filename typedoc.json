@@ -1,16 +1,11 @@
 {
   "name": "CacheIT",
   "mode": "file",
-  "out": "docs",
-  "inputFiles": ["./dist"],
-  "externalPattern": ["node_modules/**/*.ts"],
   "theme": "default",
-  "includeDeclarations": true,
-  "excludeExternals": true,
   "excludePrivate": true,
   "hideGenerator": true,
+  "readme": "none",
   "plugin": [
-    "typedoc-plugin-ui-router",
-    "typedoc-plugin-markdown"
+    "typedoc-plugin-ui-router"
   ]
 }
