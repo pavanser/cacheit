@@ -24,6 +24,6 @@ Defined defined properties of collection items.
 
 • **id**: *string*
 
-*Defined in [interfaces.ts:44](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L44)*
+*Defined in [src/interfaces.ts:49](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L49)*
 
 Each collection item should have id, for controlling uniq of item in collection and manipulating of it.

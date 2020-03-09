@@ -15,7 +15,7 @@
 
 • **Failed**: = "Failed"
 
-*Defined in [enums.ts:11](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L11)*
+*Defined in [src/enums.ts:11](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L11)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Success**: = "Success"
 
-*Defined in [enums.ts:10](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L10)*
+*Defined in [src/enums.ts:10](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L10)*

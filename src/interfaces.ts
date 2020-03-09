@@ -1,4 +1,5 @@
-import { Actions, Statuses } from "enums";
+import { Actions, Sorting, Statuses } from "enums";
+import Chain from "core/Chain";
 
 export interface AbstractCache {
   storage: IStorage;
@@ -28,7 +29,7 @@ export interface IStorage {
 }
 
 /**
- * Success response for all collection methods
+ * Response for all collection methods
  * */
 export interface IResult {
   status: Statuses;
@@ -36,6 +37,10 @@ export interface IResult {
   items: ICollectionItem[];
   error?: Error;
 }
+
+/*
+ * Collection interfaces
+ * */
 
 export interface ICollectionItem {
   /**
@@ -60,51 +65,51 @@ export interface ICollection {
    * Add single collection item in current collection instance.
    * Item's id is required for proper adding and future usage.
    * */
-  add(item: ICollectionItem): Promise<IResult>;
+  add(item: ICollectionItem): IResult | Promise<IResult>;
 
   /**
    * Bulk adding items in current collection instance.
    * Method expected array of [collection items here.
    * Item id is required in each array item for proper adding and future usage.
    * */
-  addBulk(items: ICollectionItem[]): Promise<IResult>;
+  addBulk(items: ICollectionItem[]): IResult | Promise<IResult>;
 
   /**
    * Delete all items from current collection instance
    * */
-  clear(key: string): Promise<IResult>;
+  clear(key: string): IResult | Promise<IResult>;
 
   /**
    * Getting single item by key
    * */
-  get(key: string): Promise<ICollectionItem>;
+  get(key: string): ICollectionItem | Promise<ICollectionItem>;
 
   /**
    * Getting all items from current collection instance
    * */
-  getAll(): Promise<ICollectionItem[]>;
+  getAll(): Chain | Promise<Chain>;
 
   /**
    * Delete items by {@params key} from current collection instance
    * */
-  delete(key: string): Promise<IResult>;
+  delete(key: string): IResult | Promise<IResult>;
 
   /**
    * Delete more than on item by {@params keys} from current collection instance
    * */
-  deleteBulk(...keys: string[]): Promise<IResult>;
+  deleteBulk(...keys: string[]): IResult | Promise<IResult>;
 
   /**
    * Get all current collection instance keys
    * */
-  keys(): Promise<string[]>;
+  keys(): string[] | Promise<string[]>;
 
   /**
    * Update single collection item in current collection instance.
    * Could be full item or it's part.
    * Item id is required for proper updating.
    * */
-  put(item: ICollectionItem): Promise<IResult>;
+  put(item: ICollectionItem): IResult | Promise<IResult>;
 
   /**
    * Bulk updating items in current collection instance.
@@ -112,14 +117,14 @@ export interface ICollection {
    * Could be full item or it's part.
    * Item id is required for proper updating.
    * */
-  putBulk(items: ICollectionItem[]): Promise<IResult>;
+  putBulk(items: ICollectionItem[]): IResult | Promise<IResult>;
 
   /**
    * Update or add collection item in current collection instance.
    * Could be full item or it's part.
    * Item id is required for proper updating or adding.
    * */
-  upsert(item: ICollectionItem): Promise<IResult>;
+  upsert(item: ICollectionItem): IResult | Promise<IResult>;
 
   /**
    * Bulk updating or adding items in current collection instance.
@@ -127,5 +132,33 @@ export interface ICollection {
    * Could be full item or it's part.
    * Item id is required for proper updating.
    * */
-  upsertBulk(items: ICollectionItem[]): Promise<IResult>;
+  upsertBulk(items: ICollectionItem[]): IResult | Promise<IResult>;
+}
+
+/*
+ * Error interfaces
+ * */
+
+export interface ICollectionError extends Error {
+  message: string;
+}
+
+export interface IStorageError extends Error {
+  message: string;
+}
+
+/*
+ * Core interfaces
+ * */
+
+export interface IConditionObject {
+  [property: string]: any;
+}
+
+export interface IChainGroup {
+  [groupKey: string]: IChainDataItem[];
+}
+
+export interface IChainDataItem {
+  [property: string]: any;
 }

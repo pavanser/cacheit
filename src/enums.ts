@@ -10,3 +10,8 @@ export enum Statuses {
   Success = "Success",
   Failed = "Failed",
 }
+
+export enum Sorting {
+  Asc = "Ascending",
+  Desc = "Descending",
+}

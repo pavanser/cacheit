@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IResult | CacheIT</title>
+	<title>ToolKit | CacheIT</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,28 +56,21 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="iresult.html">IResult</a>
+					<a href="toolkit.html">ToolKit</a>
 				</li>
 			</ul>
-			<h1>Interface IResult</h1>
+			<h1>Class ToolKit</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Response for all collection methods</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IResult</span>
+						<span class="target">ToolKit</span>
 					</li>
 				</ul>
 			</section>
@@ -86,58 +79,71 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-external">
-							<h3>Properties</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="iresult.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="iresult.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="iresult.html#items" class="tsd-kind-icon">items</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="iresult.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="toolkit.html#groupby" class="tsd-kind-icon">group<wbr>By</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="toolkit.html#sortby" class="tsd-kind-icon">sort<wbr>By</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="action" class="tsd-anchor"></a>
-					<h3>action</h3>
-					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <a href="../enums/actions.html" class="tsd-signature-type">Actions</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L36">src/interfaces.ts:36</a></li>
-						</ul>
-					</aside>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="groupby" class="tsd-anchor"></a>
+					<h3>group<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">group<wbr>By<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/ichaindataitem.html" class="tsd-signature-type">IChainDataItem</a><span class="tsd-signature-symbol">[]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ichaingroup.html" class="tsd-signature-type">IChainGroup</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/ToolKit.ts#L5">src/core/ToolKit.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="../interfaces/ichaindataitem.html" class="tsd-signature-type">IChainDataItem</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ichaingroup.html" class="tsd-signature-type">IChainGroup</a></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <a href="icollectionerror.html#error" class="tsd-signature-type">Error</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L38">src/interfaces.ts:38</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="items" class="tsd-anchor"></a>
-					<h3>items</h3>
-					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <a href="icollectionitem.html" class="tsd-signature-type">ICollectionItem</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L37">src/interfaces.ts:37</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="status" class="tsd-anchor"></a>
-					<h3>status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="../enums/statuses.html" class="tsd-signature-type">Statuses</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L35">src/interfaces.ts:35</a></li>
-						</ul>
-					</aside>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="sortby" class="tsd-anchor"></a>
+					<h3>sort<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">sort<wbr>By<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/ichaindataitem.html" class="tsd-signature-type">IChainDataItem</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dir<span class="tsd-signature-symbol">: </span><a href="../enums/sorting.html" class="tsd-signature-type">Sorting</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ichaindataitem.html" class="tsd-signature-type">IChainDataItem</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/ToolKit.ts#L21">src/core/ToolKit.ts:21</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="../interfaces/ichaindataitem.html" class="tsd-signature-type">IChainDataItem</a></h5>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>dir: <a href="../enums/sorting.html" class="tsd-signature-type">Sorting</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ichaindataitem.html" class="tsd-signature-type">IChainDataItem</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -161,64 +167,58 @@
 						<a href="../enums/statuses.html" class="tsd-kind-icon">Statuses</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/chain.html" class="tsd-kind-icon">Chain</a>
+						<a href="chain.html" class="tsd-kind-icon">Chain</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/paginator.html" class="tsd-kind-icon">Paginator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/toolkit.html" class="tsd-kind-icon">Tool<wbr>Kit</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="abstractcache.html" class="tsd-kind-icon">Abstract<wbr>Cache</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="ichaindataitem.html" class="tsd-kind-icon">IChain<wbr>Data<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="ichaingroup.html" class="tsd-kind-icon">IChain<wbr>Group</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="icollection.html" class="tsd-kind-icon">ICollection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="icollectionerror.html" class="tsd-kind-icon">ICollection<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="icollectionitem.html" class="tsd-kind-icon">ICollection<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="iconditionobject.html" class="tsd-kind-icon">ICondition<wbr>Object</a>
+						<a href="paginator.html" class="tsd-kind-icon">Paginator</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-is-external">
-						<a href="iresult.html" class="tsd-kind-icon">IResult</a>
+					<li class="current tsd-kind-class tsd-is-external">
+						<a href="toolkit.html" class="tsd-kind-icon">Tool<wbr>Kit</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="iresult.html#action" class="tsd-kind-icon">action</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="toolkit.html#groupby" class="tsd-kind-icon">group<wbr>By</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="iresult.html#error" class="tsd-kind-icon">error</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="iresult.html#items" class="tsd-kind-icon">items</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="iresult.html#status" class="tsd-kind-icon">status</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="toolkit.html#sortby" class="tsd-kind-icon">sort<wbr>By</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="istorage.html" class="tsd-kind-icon">IStorage</a>
+						<a href="../interfaces/abstractcache.html" class="tsd-kind-icon">Abstract<wbr>Cache</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="istorageerror.html" class="tsd-kind-icon">IStorage<wbr>Error</a>
+						<a href="../interfaces/ichaindataitem.html" class="tsd-kind-icon">IChain<wbr>Data<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="istorageitems.html" class="tsd-kind-icon">IStorage<wbr>Items</a>
+						<a href="../interfaces/ichaingroup.html" class="tsd-kind-icon">IChain<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/icollection.html" class="tsd-kind-icon">ICollection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/icollectionerror.html" class="tsd-kind-icon">ICollection<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/icollectionitem.html" class="tsd-kind-icon">ICollection<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/iconditionobject.html" class="tsd-kind-icon">ICondition<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/iresult.html" class="tsd-kind-icon">IResult</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/istorage.html" class="tsd-kind-icon">IStorage</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/istorageerror.html" class="tsd-kind-icon">IStorage<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/istorageitems.html" class="tsd-kind-icon">IStorage<wbr>Items</a>
 					</li>
 				</ul>
 			</nav>

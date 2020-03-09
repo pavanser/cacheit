@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Statuses | CacheIT</title>
+	<title>Paginator | CacheIT</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,51 +56,166 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="statuses.html">Statuses</a>
+					<a href="paginator.html">Paginator</a>
 				</li>
 			</ul>
-			<h1>Enumeration Statuses</h1>
+			<h1>Class Paginator</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Paginator</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-external">
-							<h3>Enumeration members</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="statuses.html#failed" class="tsd-kind-icon">Failed</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="statuses.html#success" class="tsd-kind-icon">Success</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="paginator.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private-protected tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-external"><a href="paginator.html#perpageitems" class="tsd-kind-icon">per<wbr>Page<wbr>Items</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="paginator.html#getpage" class="tsd-kind-icon">get<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="paginator.html#getpageitems" class="tsd-kind-icon">get<wbr>Page<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="paginator.html#getperpage" class="tsd-kind-icon">get<wbr>Per<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="paginator.html#getsize" class="tsd-kind-icon">get<wbr>Size</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-					<a name="failed" class="tsd-anchor"></a>
-					<h3>Failed</h3>
-					<div class="tsd-signature tsd-kind-icon">Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Failed&quot;</span></div>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Paginator<span class="tsd-signature-symbol">(</span>perPageItems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="paginator.html" class="tsd-signature-type">Paginator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/Paginator.ts#L4">src/core/Paginator.ts:4</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>perPageItems: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="paginator.html" class="tsd-signature-type">Paginator</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-external">
+					<a name="perpageitems" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> per<wbr>Page<wbr>Items</h3>
+					<div class="tsd-signature tsd-kind-icon">per<wbr>Page<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 20</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L11">src/enums.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/Paginator.ts#L4">src/core/Paginator.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-					<a name="success" class="tsd-anchor"></a>
-					<h3>Success</h3>
-					<div class="tsd-signature tsd-kind-icon">Success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Success&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L10">src/enums.ts:10</a></li>
-						</ul>
-					</aside>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getpage" class="tsd-anchor"></a>
+					<h3>get<wbr>Page</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Page<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/Paginator.ts#L10">src/core/Paginator.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getpageitems" class="tsd-anchor"></a>
+					<h3>get<wbr>Page<wbr>Items</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Page<wbr>Items<span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/icollectionitem.html" class="tsd-signature-type">ICollectionItem</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/Paginator.ts#L24">src/core/Paginator.ts:24</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>page: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/icollectionitem.html" class="tsd-signature-type">ICollectionItem</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getperpage" class="tsd-anchor"></a>
+					<h3>get<wbr>Per<wbr>Page</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Per<wbr>Page<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/Paginator.ts#L20">src/core/Paginator.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getsize" class="tsd-anchor"></a>
+					<h3>get<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pavanser/cacheit/blob/9ccfb81/src/core/Paginator.ts#L16">src/core/Paginator.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -115,34 +230,46 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-is-external">
-						<a href="actions.html" class="tsd-kind-icon">Actions</a>
+						<a href="../enums/actions.html" class="tsd-kind-icon">Actions</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-is-external">
-						<a href="sorting.html" class="tsd-kind-icon">Sorting</a>
+						<a href="../enums/sorting.html" class="tsd-kind-icon">Sorting</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-external">
+						<a href="../enums/statuses.html" class="tsd-kind-icon">Statuses</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="chain.html" class="tsd-kind-icon">Chain</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-is-external">
-						<a href="statuses.html" class="tsd-kind-icon">Statuses</a>
+					<li class="current tsd-kind-class tsd-is-external">
+						<a href="paginator.html" class="tsd-kind-icon">Paginator</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-								<a href="statuses.html#failed" class="tsd-kind-icon">Failed</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="paginator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-								<a href="statuses.html#success" class="tsd-kind-icon">Success</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-external">
+								<a href="paginator.html#perpageitems" class="tsd-kind-icon">per<wbr>Page<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="paginator.html#getpage" class="tsd-kind-icon">get<wbr>Page</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="paginator.html#getpageitems" class="tsd-kind-icon">get<wbr>Page<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="paginator.html#getperpage" class="tsd-kind-icon">get<wbr>Per<wbr>Page</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="paginator.html#getsize" class="tsd-kind-icon">get<wbr>Size</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/chain.html" class="tsd-kind-icon">Chain</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/paginator.html" class="tsd-kind-icon">Paginator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/toolkit.html" class="tsd-kind-icon">Tool<wbr>Kit</a>
+						<a href="toolkit.html" class="tsd-kind-icon">Tool<wbr>Kit</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="../interfaces/abstractcache.html" class="tsd-kind-icon">Abstract<wbr>Cache</a>

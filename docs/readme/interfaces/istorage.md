@@ -23,7 +23,7 @@
 
 • **storage**: *[IStorageItems](istorageitems.md)*
 
-*Defined in [interfaces.ts:18](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L18)*
+*Defined in [src/interfaces.ts:19](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L19)*
 
 Getter which will return current storage collections as a snapshot.
 
@@ -33,7 +33,7 @@ Getter which will return current storage collections as a snapshot.
 
 ▸ **addCollection**(`collectionName`: string): *void*
 
-*Defined in [interfaces.ts:22](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L22)*
+*Defined in [src/interfaces.ts:23](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L23)*
 
 Adding new collection [ICollection](icollection.md) to current storage by {@params collectionName}
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **deleteCollection**(`collectionName`: string): *void*
 
-*Defined in [interfaces.ts:27](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L27)*
+*Defined in [src/interfaces.ts:28](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L28)*
 
 Method used for removing collection [ICollection](icollection.md) from storage by {@params collectionName}
 

@@ -18,7 +18,7 @@
 
 • **Add**: = "Added"
 
-*Defined in [enums.ts:2](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L2)*
+*Defined in [src/enums.ts:2](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L2)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **Clear**: = "Cleared"
 
-*Defined in [enums.ts:3](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L3)*
+*Defined in [src/enums.ts:3](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L3)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **Delete**: = "Deleted"
 
-*Defined in [enums.ts:4](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L4)*
+*Defined in [src/enums.ts:4](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L4)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **Update**: = "Updated"
 
-*Defined in [enums.ts:5](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L5)*
+*Defined in [src/enums.ts:5](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L5)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **Upsert**: = "Upserted"
 
-*Defined in [enums.ts:6](https://github.com/pavanser/cacheit/blob/5812e6a/src/enums.ts#L6)*
+*Defined in [src/enums.ts:6](https://github.com/pavanser/cacheit/blob/9ccfb81/src/enums.ts#L6)*

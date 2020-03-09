@@ -1,93 +1,94 @@
-import * as CacheIT from "interfaces";
-import * as Enums from "enums";
+import { ICollection, ICollectionItem, IResult } from "interfaces";
+import { Actions, Statuses } from "enums";
+import Chain from "core/Chain";
 
-class IndexedDBCollection implements CacheIT.ICollection {
+class IndexedDBCollection implements ICollection {
   readonly name: string;
 
   constructor(collectionName: string) {
     this.name = collectionName;
   }
 
-  add(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
+  add(item: ICollectionItem): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Add,
+      status: Statuses.Success,
+      action: Actions.Add,
       items: [],
     });
   }
 
-  addBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
+  addBulk(items: ICollectionItem[]): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Add,
+      status: Statuses.Success,
+      action: Actions.Add,
       items: [],
     });
   }
 
-  clear(key: string): Promise<CacheIT.IResult> {
+  clear(key: string): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Clear,
+      status: Statuses.Success,
+      action: Actions.Clear,
       items: [],
     });
   }
 
-  delete(key: string): Promise<CacheIT.IResult> {
+  delete(key: string): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Delete,
+      status: Statuses.Success,
+      action: Actions.Delete,
       items: [],
     });
   }
 
-  deleteBulk(...keys: string[]): Promise<CacheIT.IResult> {
+  deleteBulk(...keys: string[]): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Delete,
+      status: Statuses.Success,
+      action: Actions.Delete,
       items: [],
     });
   }
 
-  get(key: string): Promise<CacheIT.ICollectionItem> {
+  get(key: string): Promise<ICollectionItem> {
     return Promise.resolve({ id: "test-id" });
   }
 
-  getAll(): Promise<CacheIT.ICollectionItem[]> {
-    return Promise.resolve([{ id: "test-id" }]);
+  getAll(): Promise<Chain> {
+    return Promise.resolve().then(() => new Chain([]));
   }
 
   keys(): Promise<string[]> {
     return Promise.resolve([]);
   }
 
-  put(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
+  put(item: ICollectionItem): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Update,
+      status: Statuses.Success,
+      action: Actions.Update,
       items: [],
     });
   }
 
-  putBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
+  putBulk(items: ICollectionItem[]): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Update,
+      status: Statuses.Success,
+      action: Actions.Update,
       items: [],
     });
   }
 
-  upsert(item: CacheIT.ICollectionItem): Promise<CacheIT.IResult> {
+  upsert(item: ICollectionItem): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Upsert,
+      status: Statuses.Success,
+      action: Actions.Upsert,
       items: [],
     });
   }
 
-  upsertBulk(items: CacheIT.ICollectionItem[]): Promise<CacheIT.IResult> {
+  upsertBulk(items: ICollectionItem[]): Promise<IResult> {
     return Promise.resolve({
-      status: Enums.Statuses.Success,
-      action: Enums.Actions.Upsert,
+      status: Statuses.Success,
+      action: Actions.Upsert,
       items: [],
     });
   }

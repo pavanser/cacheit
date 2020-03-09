@@ -2,7 +2,7 @@
 
 # Interface: IResult
 
-Success response for all collection methods
+Response for all collection methods
 
 ## Hierarchy
 
@@ -23,15 +23,15 @@ Success response for all collection methods
 
 • **action**: *[Actions](../enums/actions.md)*
 
-*Defined in [interfaces.ts:35](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L35)*
+*Defined in [src/interfaces.ts:36](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L36)*
 
 ___
 
 ### `Optional` error
 
-• **error**? : *Error*
+• **error**? : *[Error](icollectionerror.md#error)*
 
-*Defined in [interfaces.ts:37](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L37)*
+*Defined in [src/interfaces.ts:38](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L38)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **items**: *[ICollectionItem](icollectionitem.md)[]*
 
-*Defined in [interfaces.ts:36](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L36)*
+*Defined in [src/interfaces.ts:37](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L37)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **status**: *[Statuses](../enums/statuses.md)*
 
-*Defined in [interfaces.ts:34](https://github.com/pavanser/cacheit/blob/5812e6a/src/interfaces.ts#L34)*
+*Defined in [src/interfaces.ts:35](https://github.com/pavanser/cacheit/blob/9ccfb81/src/interfaces.ts#L35)*
